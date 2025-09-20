@@ -15,11 +15,26 @@ import Bride from "@/components/bride";
 import Date from "@/components/date";
 import Cover from "@/components/cover";
 
-import { useRef, useEffect } from "react";
+import { Button } from "@/components/ui/button"
+import { Play, Pause } from "lucide-react"
 
-export default function Page() {
+import { useRef, useEffect, useState } from "react";
+
+export default function Home() {
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+    const togglePlayPause = () => {
+     if (!audioRef.current) return;
+    if (isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      audioRef.current.play();
+      setIsPlaying(true);
+    }
+  };
 
   useEffect(() => {
     const playAudio = () => {
@@ -37,12 +52,23 @@ export default function Page() {
 
   return (
     <div className="min-h-screen">
-        <main className="flex flex-col bg-[#F5E6BE]">
-            <div className="flex flex-col items-center ">
-                <audio ref={audioRef} loop>
-                    <source src="/lagu.mp3" type="audio/mp3" />
-                </audio>
-                <Cover />
+        <div className="flex flex-col bg-[#F5E6BE]">
+            <div className='flex flex-col bg-[url("/pucuk.png")] bg-repeat-y bg-contain'>
+                <div className="fixed right-15 top-167 z-40">
+                    <audio ref={audioRef} src="/lagu.mp3" />
+                    <Cover />
+                    <Button
+                    onClick={togglePlayPause}
+                    className="absolute rounded-full w-10 h-10 bg-[#D9D9D9] hover:bg-[#c1c1c1] border-2 border-black z-10">
+                        {
+                            isPlaying ? (
+                                <Pause className="w-6 h-6" size={16} color="black" />
+                              ) : (
+                                <Play className="w-6 h-6 stroke-black"size={16} color="black" />
+                            )
+                        }
+                    </Button>
+                </div>
                 <Hero />
                 <motion.div
                 initial={{ opacity: 0 }}
@@ -90,7 +116,7 @@ export default function Page() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 2 }}
-                className="mt-20">
+                className="mt-40 items-center">
                     <GuestBook />
                 </motion.div>
                 <motion.div
@@ -114,35 +140,35 @@ export default function Page() {
                 className="lg:mt-30 mt-10">
                     <WeddingMessage />
                 </motion.div>
-                <div className="flex flex-col items-center mt-20">
-                    <div className="">
+                <div className="flex flex-col mt-20">
+                    <div className="relative">
                         <Image
-                        className="bg-white object-cover z-10 h-screen lg:-mt-0 "
+                        className="absolute object-cover z-10 h-screen lg:-mt-0 "
                         src="/cover1.jpg"
                         alt="adrian-diajeng"
                         width={1920}
                         height={1080}
                         />
                         <Image
-                            className="absolute lg:flex lg:-mt-[730px] -mt-215 h-screen z-10"
+                            className="absolute lg:flex h-screen z-10"
                             src="/effect2.png"
                             alt=""
                             width={1920}
                             height={1080}
                         />
                         <Image
-                            className="absolute lg:flex lg:-mt-[730px] -mt-215 h-screen z-10"
+                            className="absolute lg:flex h-screen z-10"
                             src="/effect3.png"
                             alt=""
                             width={1920}
                             height={1080}
                         />
                     </div>
-                    <div className="flex flex-col items-center mb-20 text-[#4F4F4F] lg:-mt-96 -mt-70 z-20 lg:mx-60  text-center">
-                            <h1 className="lg:text-6xl text-xl mx-10 font-regular justify-center lg:mb-8 mb-6 uppercase ">
+                    <div className="flex flex-col items-center mb-20 text-[#4F4F4F] z-20 text-center mt-145 sm:mt-160 lg:mt-87">
+                            <h1 className="lg:text-6xl text-xl mx-10 font-regular justify-center md:mx-40 lg:mb-8 mb-6 uppercase">
                                 Thank You for Your Attendance and Support
                             </h1>
-                            <h1 className="lg:text-3xl text-md font-regular mx-10 lg:mx-20 lg:mb-16 mb-4">
+                            <h1 className="lg:text-3xl text-md font-regular mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-16 mb-4">
                                 With hearts full of love, we warmly invite you to join us, share in our joy, and bless the beginning of our new chapter.
                             </h1>
                             <h1 className="lg:text-6xl text-[44px] font-title">
@@ -164,7 +190,7 @@ export default function Page() {
                     </Link>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
   );
 }
