@@ -6,15 +6,8 @@ const Hero = () => {
     <div>
         <div className="flex flex-col ">
             <div className='hidden md:flex h-screen bg-[url("/cover1.jpg")] bg-cover bg-center'>
-            {/* <Image
-                className="hidden lg: bg-white z-0 h-screen items-center lg:object-cover"
-                src="/cover1.jpg"
-                alt="adrian-diajeng"
-                width={1920}
-                height={1080}
-            /> */}
             <Image
-                className="hidden md:flex object-cover object-bottom z-0 h-screen w-screen"
+                className="hidden md:flex object-cover object-bottom z-0 h-screen"
                 src="/effect1.png"
                 alt=""
                 width={1920}
@@ -22,15 +15,8 @@ const Hero = () => {
             />
             </div>
             <div className='flex md:hidden h-screen bg-[url("/herom.png")] bg-cover bg-top'>
-            {/* <Image
-                className="flex lg:hidden h-screen bg-white z-10 object-cover"
-                src="/herom.png"
-                alt="adrian-diajeng"
-                width={1920}
-                height={1080}
-            />             */}
             <Image
-                className="absolute flexmd:hidden h-full object-cover object-bottom z-0 w-screen"
+                className="absolute flexmd:hidden h-screen object-cover object-bottom z-0"
                 src="/effect1m.png"
                 alt=""
                 width={402}

@@ -79,7 +79,7 @@ const Bride = () => {
             <div className="col-span-2">
             <Image
             className="px-14"
-            src="/frame cw.png"
+            src="/framecw.png"
             alt="The groom"
             width={1920}
             height={1080}
@@ -115,7 +115,7 @@ const Bride = () => {
         <div className="col-span-2">
             <Image
             className="px-14"
-            src="/frame cwk.png"
+            src="/framecwk.png"
             alt="The Bride"
             width={1920}
             height={1080}

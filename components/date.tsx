@@ -84,7 +84,7 @@ function Date() {
                     <div className="items-center text-[#1E1E1E] text-center w-87 h-121">
                         <div className="bg-[#72727180] rounded-t-4xl z-10">
                             <Image
-                                className="w-[968px] h-40 rounded-t-4xl opacity-70 z-10"
+                                className="w-full h-40 rounded-t-4xl opacity-70 z-10 mc-"
                                 src="/timer.jpg"
                                 alt="timer"
                                 width={1920}

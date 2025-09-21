@@ -44,6 +44,7 @@ export default function Home() {
     };
 
     document.addEventListener('click', playAudio, { once: true });
+    setIsPlaying(true);
 
     return () => {
       document.removeEventListener('click', playAudio);
@@ -106,8 +107,8 @@ export default function Home() {
                         />
                     </div>
                     <div className="font-regular lg:mt-20 mt-10 lg:-ml-24">
-                        <h1 className="text-2xl lg:text-4xl text-[#9D8443] font-semibold">OUR STORY</h1>
-                        <div className="lg:-ml-92 -ml-3">
+                        <h1 className="text-2xl lg:text-4xl text-[#9D8443] font-semibold sm:ml-80 lg:ml-0">OUR STORY</h1>
+                        <div className="lg:-ml-92 sm:-mx-auto -ml-3">
                         <Story />
                         </div>
                     </div>
