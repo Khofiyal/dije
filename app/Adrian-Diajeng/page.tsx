@@ -13,6 +13,7 @@ import Hero from "@/components/hero";
 import Quotes from "@/components/quotes";
 import Bride from "@/components/bride";
 import Date from "@/components/date";
+import Cover from "@/components/cover";
 
 import { Button } from "@/components/ui/button"
 import { Play, Pause } from "lucide-react"
@@ -43,6 +44,7 @@ export default function Home() {
     };
 
     document.addEventListener('click', playAudio, { once: true });
+    setIsPlaying(true);
 
     return () => {
       document.removeEventListener('click', playAudio);
@@ -50,19 +52,19 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="relative w-full min-h-screen">
         <div className="flex flex-col bg-[#F5E6BE]">
-            <div className='flex flex-col bg-[url("/pucuk.png")] bg-repeat-y bg-contain'>
-                <div className="fixed right-15 top-167 z-40">
+            <div className='w-full flex flex-col bg-[url("/pucuk.png")] bg-repeat-y bg-contain'>
+                <div className="absolute z-40">
                     <audio ref={audioRef} src="/lagu.mp3" />
                     <Button
                     onClick={togglePlayPause}
-                    className="absolute rounded-full w-10 h-10 bg-[#D9D9D9] hover:bg-[#c1c1c1] border-2 border-black z-10">
+                    className="fixed bottom-4 right-4 rounded-full w-11 h-11 bg-[#F9F5EB] hover:bg-[#c1c1c1] border-4 border-[#F2C94C] z-50 ">
                         {
                             isPlaying ? (
-                                <Pause className="w-6 h-6" size={16} color="black" />
+                                <Pause className="w-20 h-20 fill-[#927248]" size={25} color="" />
                               ) : (
-                                <Play className="w-6 h-6 stroke-black"size={16} color="black" />
+                                <Play className="w-20 h-20 fill-[#927248]"size={25} color="" />
                             )
                         }
                     </Button>
@@ -93,8 +95,9 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                className="flex flex-col lg:grid lg:grid-cols-2 bg-[#F9F5EC] w-full lg:h-[637px] mt-30 py-10 px-5 lg:px-40">
-                    <div className="flex items-center">
+                className="bg-[#F9F5EC] w-full lg:h-[637px] mt-30  py-15 pb-15 lg:px-40">
+                    <div className="flex flex-col lg:grid lg:grid-cols-2">
+                    <div className="mx-auto">
                         <Image 
                         className="object-cover lg:object-contain object-center h-52 lg:h-120 items-center justify-center"
                         src="/story.png"
@@ -103,11 +106,9 @@ export default function Home() {
                         height={477}
                         />
                     </div>
-                    <div className="font-regular lg:mt-20 mt-10 lg:-ml-24">
-                        <h1 className="text-2xl lg:text-4xl text-[#9D8443] font-semibold">OUR STORY</h1>
-                        <div className="lg:-ml-92 -ml-3">
+                    <div className="font-regular mt-10 lg:mt-0 mx-5">  
                         <Story />
-                        </div>
+                    </div>
                     </div>
                 </motion.div>
                 <motion.div
