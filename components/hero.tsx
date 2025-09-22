@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="flex flex-col ">
             <div className='hidden md:flex h-screen bg-[url("/cover1.jpg")] bg-cover bg-center'>
             <Image
-                className="hidden md:flex object-cover object-bottom z-0 h-screen"
+                className="hidden md:flex object-cover object-bottom z-0 h-screen w-screen"
                 src="/effect1.png"
                 alt=""
                 width={1920}
@@ -16,7 +16,7 @@ const Hero = () => {
             </div>
             <div className='flex md:hidden h-screen bg-[url("/herom.png")] bg-cover bg-top'>
             <Image
-                className="absolute flexmd:hidden h-screen object-cover object-bottom z-0"
+                className="absolute flexmd:hidden w-screen h-screen object-cover object-bottom z-0"
                 src="/effect1m.png"
                 alt=""
                 width={402}

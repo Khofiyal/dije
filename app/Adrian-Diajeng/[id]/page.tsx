@@ -141,9 +141,9 @@ export default function Home() {
                     <WeddingMessage />
                 </motion.div>
                 <div className="flex flex-col mt-20">
-                    <div className="relative">
+                    <div className="relative h-screen">
                         <Image
-                        className="absolute object-cover z-10 h-screen lg:-mt-0 "
+                        className="absolute object-cover z-10 h-screen "
                         src="/cover1.jpg"
                         alt="adrian-diajeng"
                         width={1920}
@@ -164,11 +164,11 @@ export default function Home() {
                             height={1080}
                         />
                     </div>
-                    <div className="flex flex-col items-center mb-20 text-[#4F4F4F] z-20 text-center mt-145 sm:mt-160 lg:mt-87">
+                    <div className="absolute flex flex-col items-center mb-20 text-[#4F4F4F] z-20 text-center mt-145 sm:mt-160 lg:mt-87">
                             <h1 className="lg:text-6xl text-xl mx-10 font-regular justify-center md:mx-40 lg:mb-8 mb-6 uppercase">
                                 Thank You for Your Attendance and Support
                             </h1>
-                            <h1 className="lg:text-3xl text-md font-regular mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-16 mb-4">
+                            <h1 className="lg:text-3xl text-md font-regular mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-16">
                                 With hearts full of love, we warmly invite you to join us, share in our joy, and bless the beginning of our new chapter.
                             </h1>
                             <h1 className="lg:text-6xl text-[44px] font-title">
@@ -177,7 +177,7 @@ export default function Home() {
                     </div>
                 </div>
                 {/* Footer */}
-                <div className="flex flex-col bg-white w-full items-center font-regular lg:py-3 py-3 lg:-mt-12 -mt-15">
+                <div className="flex flex-col bg-white w-full items-center font-regular lg:py-3 py-3 bottom-0">
                     <Link href="https://www.devhouse.id/">
                     <h1 className="text-[#1E1E1E] lg:text-xs text-[8px] text-center">Powered by</h1>
                     <Image

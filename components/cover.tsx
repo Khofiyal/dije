@@ -18,18 +18,18 @@ const Cover = () => {
                 <DialogContent>
                     <DialogTitle className='hidden'></DialogTitle>
                     <div className="flex flex-col ">
-                        <div className='hidden md:flex h-screen bg-[url("/cover1.jpg")] bg-cover bg-center'>
+                        <div className='hidden md:flex h-screen w-screen bg-[url("/cover1.jpg")] bg-cover bg-center'>
                             <Image
-                                className="hidden md:flex object-cover object-bottom z-0 h-screen"
+                                className="hidden md:flex object-cover object-bottom z-0 h-screen w-screen"
                                 src="/effect1.png"
                                 alt=""
                                 width={1920}
                                 height={1080}
                             />
                             </div>
-                        <div className='flex md:hidden h-screen bg-[url("/herom.png")] bg-cover bg-top'>
+                        <div className='flex md:hidden h-screen w-screen bg-[url("/herom.png")] bg-cover bg-top'>
                             <Image
-                                className="absolute flexmd:hidden h-screen object-cover object-bottom z-0"
+                                className="absolute flexmd:hidden h-screen object-cover object-bottom z-0 w-screen"
                                 src="/effect1m.png"
                                 alt=""
                                 width={402}
@@ -50,7 +50,6 @@ const Cover = () => {
                         <h1 className="lg:text-3xl text-lg font-regular z-20">
                             {params.id?.toString().replaceAll("%2B", "and").replaceAll("%20", " ")}
                         </h1>
-                        
                         <Button
                         className='bg-[#FFF9EA] text-[#FACB3D] hover:bg-[#FFF9EA] hover:text-[#FACB3D] ring-0 border border-[#FACB3D] mt-8 font-regular lg:text-xl text-lg p-5 lg:w-100 h-12 uppercase font-semibold z-20'
                         onClick={() => setOpen(false)}>Open Invitation</Button>
