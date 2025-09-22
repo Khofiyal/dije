@@ -43,8 +43,9 @@ function WeddingMessage() {
                 
                <div
                key={guestBook.id}
-               className="flex flex-col bg-black/50 text-white lg:w-[700px] w-80 lg:py-5 py-2 lg:px-5 px-2 rounded-lg  ">
-                    <Label className="lg:text-xl text-md font-semibold ">{guestBook.name}</Label>
+               className="flex flex-col bg-black/50 text-white lg:w-[700px] w-80 lg:py-5 py-2 lg:px-5 px-5 rounded-lg  ">
+                    <Label className="lg:text-xl text-md font-semibold capitalize">{guestBook.name}</Label>
+                    <Label className="lg:text-xl text-md font-semibold"></Label>
                     <p className="lg:text-xl text-md">{guestBook.message.replace(/\\n/g, '\n')}</p>
                </div>
               ))}

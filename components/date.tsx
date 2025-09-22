@@ -79,9 +79,9 @@ function Date() {
 
         {/* Mobile */}
         <div className='flex flex-col lg:hidden '>
-            <Card className="bg-[#F9F5EC]">
+            <Card className="bg-[#F9F5EC] w-87 h-121 mx-auto">
                 <CardContent>
-                    <div className="items-center text-[#1E1E1E] text-center w-87 h-121">
+                    <div className="items-center text-[#1E1E1E] text-center">
                         <div className="bg-[#72727180] rounded-t-4xl z-10">
                             <Image
                                 className="w-full h-40 rounded-t-4xl opacity-70 z-10 mc-"

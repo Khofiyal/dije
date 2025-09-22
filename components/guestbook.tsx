@@ -50,7 +50,7 @@ function Guestbook() {
 
     return (
         <div className="font-regular items-center mx-auto">
-            <Card className="flex flex-col lg:w-[700px] w-85 bg-[#F9F5EC]  text-black lg:px-14 px-5 mx-auto lg:py-8 py-5">
+            <Card className="flex flex-col md:w-150 lg:w-[700px] w-85 bg-[#F9F5EC]  text-black lg:px-14 px-5 mx-auto lg:py-8 py-5">
                 <CardHeader>
                     <CardTitle className="lg:text-3xl text-xl uppercase text-[#9D8443] text-center">attendance</CardTitle>
                 </CardHeader>
