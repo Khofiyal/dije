@@ -96,8 +96,9 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                className="flex flex-col lg:grid lg:grid-cols-2 bg-[#F9F5EC] w-full lg:h-[637px] mt-30 py-10 px-5 lg:px-40">
-                    <div className="flex items-center">
+                className="bg-[#F9F5EC] w-full lg:h-[637px] mt-30  py-15 pb-15 lg:px-40">
+                    <div className="flex flex-col lg:grid lg:grid-cols-2">
+                    <div className="mx-auto">
                         <Image 
                         className="object-cover lg:object-contain object-center h-52 lg:h-120 items-center justify-center"
                         src="/story.png"
@@ -106,11 +107,9 @@ export default function Home() {
                         height={477}
                         />
                     </div>
-                    <div className="font-regular lg:mt-20 mt-10 lg:-ml-24 w-full">
-                        <h1 className="text-2xl lg:text-4xl text-[#9D8443] font-semibold sm:ml-80 lg:ml-0">OUR STORY</h1>
-                        <div className="lg:-ml-92">
+                    <div className="font-regular mt-10 lg:mt-0 mx-5">  
                         <Story />
-                        </div>
+                    </div>
                     </div>
                 </motion.div>
                 <motion.div
