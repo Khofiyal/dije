@@ -53,7 +53,7 @@ function Story() {
   return (
     <div className="max-w-xs">
       <h1 className="text-2xl lg:text-4xl text-[#9D8443] font-semibold">OUR STORY</h1>
-      <Carousel setApi={setApi} className="lg:w-[600px] w-max-screen mr-5">
+      <Carousel setApi={setApi} className="lg:w-[600px] w-max-screen">
         <CarouselContent className="lg:w-[600px]">
           {Array.from({ length: StoryContent.length }).map((_, index) => (
             <CarouselItem key={index}>
