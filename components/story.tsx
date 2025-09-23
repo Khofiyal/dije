@@ -59,7 +59,7 @@ function Story() {
             <CarouselItem key={index}>
                 <div className="flex flex-col gap-2 justify-center font-regular mt-5 ">
                     <span className="lg:text-2xl font-bold text-xl">{StoryContent[index].title}</span>
-                    <span className="text-[#3E3E3E] lg:text-lg text-sm">{StoryContent[index].description}<br/><br/>{StoryContent[index].description2}</span>
+                    <span className="text-[#3E3E3E] lg:text-lg text-sm text-justify">{StoryContent[index].description}<br/><br/>{StoryContent[index].description2}</span>
                 </div>
             </CarouselItem>
           ))}
