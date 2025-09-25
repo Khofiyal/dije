@@ -28,8 +28,8 @@ const Hero = () => {
             <h1 className="text-2xl font-regular font-semibold justify-center mb-8 z-30">
                 The Wedding of
             </h1>
-            <h1 className="lg:text-6xl text-5xl font-title mb-6 z-30">
-                Adrian  &  Diajeng
+            <h1 className="lg:text-6xl text-5xl font-title mb-6 z-30 whitespace-pre-wrap">
+                Diajeng  &  Adrian
             </h1>
             <h1 className="lg:text-2xl text-lg font-regular z-30">
                 Saturday

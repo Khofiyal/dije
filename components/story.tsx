@@ -50,13 +50,13 @@ function Story() {
   }, [api])
 
   return (
-    <div className="max-w-xs">
+    <div className="mx-6">
       <h1 className="text-2xl lg:text-4xl text-[#9D8443] font-semibold">OUR STORY</h1>
-      <Carousel setApi={setApi} className="lg:w-[600px] w-max-screen">
+      <Carousel setApi={setApi} className="lg:w-[600px]">
         <CarouselContent className="lg:w-[600px]">
           {Array.from({ length: StoryContent.length }).map((_, index) => (
             <CarouselItem key={index}>
-                <div className="flex flex-col gap-2 justify-center font-regular mt-5 ">
+                <div className="flex flex-col gap-2 justify-center font-regular mt-5">
                     <span className="lg:text-2xl font-bold text-xl">{StoryContent[index].title}</span>
                     <span className="text-[#3E3E3E] lg:text-lg text-sm text-justify">{StoryContent[index].description}<br/><br/>{StoryContent[index].description2}</span>
                 </div>

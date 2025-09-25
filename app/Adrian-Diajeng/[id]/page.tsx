@@ -96,7 +96,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                className="bg-[#F9F5EC] w-full lg:h-[637px] mt-30  py-15 pb-15 lg:px-40">
+                className="bg-[#F9F5EC] w-screen lg:h-[637px] mt-30  py-15 pb-15 lg:px-40">
                     <div className="flex flex-col lg:grid lg:grid-cols-2">
                     <div className="mx-auto">
                         <Image 
@@ -107,7 +107,7 @@ export default function Home() {
                         height={477}
                         />
                     </div>
-                    <div className="font-regular mt-10 lg:mt-0 mx-5">  
+                    <div className="font-regular mt-10 lg:mt-0">  
                         <Story />
                     </div>
                     </div>
@@ -165,20 +165,21 @@ export default function Home() {
                         />
                     </div>
                     <div className="absolute flex flex-col items-center mb-20 text-[#4F4F4F] z-20 text-center mt-145 sm:mt-160 lg:mt-87">
-                            <h1 className="lg:text-6xl text-xl mx-10 font-regular justify-center md:mx-40 lg:mb-8 mb-6 uppercase">
-                                Thank You for Your Attendance and Support
+                            <h1 className="lg:text-6xl text-xl mx-10 font-regular justify-center md:mx-40 lg:mb-8 mb-6 uppercase whitespace-pre-wrap">
+                                Thank You for Your
+                                Attendance and Support
                             </h1>
-                            <h1 className="hidden md:flex lg:text-3xl text-md font-regular mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-16">
+                            <h1 className="hidden md:flex lg:text-3xl text-md font-regular mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-16 whitespace-pre-wrap">
                                 With hearts full of love, we warmly invite you to join us,
                                 share in our joy, and bless the beginning of our new chapter.
                             </h1>
-                            <h1 className="flex md:hidden lg:text-3xl text-md font-regular mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-16 whitespace-pre-wrap">
+                            <h1 className="flex md:hidden text-md font-regular mx-10 mb-5  whitespace-pre-wrap">
                                 With hearts full of love, we warmly invite You
                                 to join us, share in our joy, and bless the
                                 beginning of our new chapter.
                             </h1>
-                            <h1 className="lg:text-6xl text-[44px] font-title">
-                                Adrian  &  Diajeng
+                            <h1 className="lg:text-6xl text-[44px] font-title whitespace-pre-wrap">
+                                Diajeng  &  Adrian
                             </h1>
                     </div>
                 </div>
