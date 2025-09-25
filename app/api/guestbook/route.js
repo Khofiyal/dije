@@ -12,19 +12,22 @@ export async function POST(request) {
 
     const data = { name, attendees, guest, message };
 
+    // waktu WIB
+    const timestamp = new Date().toLocaleString('id-ID', {
+      timeZone: 'Asia/Jakarta',
+      hour12: false
+    });
+
     const createGuest = await prisma.guestBook.create({
         data: {
             name: name,
             attendance: attendees,
             guestnum: guest,
             message: message,
+            createdAt: timestamp,
         },
     });
-    // waktu WIB
-    const timestamp = new Date().toLocaleString('id-ID', {
-      timeZone: 'Asia/Jakarta',
-      hour12: false
-    });
+
     
     const auth = new google.auth.GoogleAuth({
     credentials: {

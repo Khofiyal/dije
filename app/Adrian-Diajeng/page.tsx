@@ -182,18 +182,18 @@ useEffect(() => {
                             height={1080}
                         />
                     </div>
-                    <div className="absolute flex flex-col items-center mb-20 text-[#4F4F4F] z-20 text-center mt-145 sm:mt-160 lg:mt-87">
+                    <div className="absolute flex flex-col items-center text-[#4F4F4F] z-20 text-center bottom-10 md:bottom-15 w-full">
                             <h1 className="lg:text-6xl text-xl mx-10 font-regular justify-center md:mx-40 lg:mb-8 mb-6 uppercase whitespace-pre-wrap">
-                                Thank You for Your
-                                Attendance and Support
+                            Thank You for Your<br />
+                            Attendance and Support
                             </h1>
-                            <h1 className="hidden md:flex lg:text-3xl text-md font-regular mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-16 whitespace-pre-wrap">
-                                With hearts full of love, we warmly invite you to join us,
+                            <h1 className="hidden md:flex lg:text-3xl text-md font-regular justify-center mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-10">
+                                With hearts full of love, we warmly invite you to join us,<br/>
                                 share in our joy, and bless the beginning of our new chapter.
                             </h1>
-                            <h1 className="flex md:hidden text-md font-regular mx-10 mb-5  whitespace-pre-wrap">
-                                With hearts full of love, we warmly invite You
-                                to join us, share in our joy, and bless the
+                            <h1 className="flex md:hidden text-md font-regular mx-10 mb-5">
+                                With hearts full of love, we warmly invite You<br/>
+                                to join us, share in our joy, and bless the<br/>
                                 beginning of our new chapter.
                             </h1>
                             <h1 className="lg:text-6xl text-[44px] font-title whitespace-pre-wrap">
@@ -202,7 +202,7 @@ useEffect(() => {
                     </div>
                 </div>
                 {/* Footer */}
-                <div className="flex flex-col bg-white w-full items-center font-regular lg:py-3 py-3 bottom-0">
+                <div className="absolute flex flex-col bg-white w-full items-center font-regular lg:pb-3 pb-3 -bottom-13 z-30">
                     <Link href="https://www.devhouse.id/">
                     <h1 className="text-[#1E1E1E] lg:text-xs text-[8px] text-center">Powered by</h1>
                     <Image
