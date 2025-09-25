@@ -18,13 +18,17 @@ export async function POST(request) {
       hour12: false
     });
 
+    const now = new Date();
+    const offsetMs = 7 * 60 * 60 * 1000; // +7 jam
+    const nowWIB = new Date(now.getTime() + offsetMs);
+
     const createGuest = await prisma.guestBook.create({
         data: {
             name: name,
             attendance: attendees,
             guestnum: guest,
             message: message,
-            createdAt: timestamp,
+            createdAt: nowWIB,
         },
     });
 
