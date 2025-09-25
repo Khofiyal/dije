@@ -168,8 +168,14 @@ export default function Home() {
                             <h1 className="lg:text-6xl text-xl mx-10 font-regular justify-center md:mx-40 lg:mb-8 mb-6 uppercase">
                                 Thank You for Your Attendance and Support
                             </h1>
-                            <h1 className="lg:text-3xl text-md font-regular mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-16">
-                                With hearts full of love, we warmly invite you to join us, share in our joy, and bless the beginning of our new chapter.
+                            <h1 className="hidden md:flex lg:text-3xl text-md font-regular mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-16">
+                                With hearts full of love, we warmly invite you to join us,
+                                share in our joy, and bless the beginning of our new chapter.
+                            </h1>
+                            <h1 className="flex md:hidden lg:text-3xl text-md font-regular mx-10 sm:mx-20 md:mx-40 lg:mx-20 lg:mb-16 whitespace-pre-wrap">
+                                With hearts full of love, we warmly invite You
+                                to join us, share in our joy, and bless the
+                                beginning of our new chapter.
                             </h1>
                             <h1 className="lg:text-6xl text-[44px] font-title">
                                 Adrian  &  Diajeng

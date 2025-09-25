@@ -61,7 +61,7 @@ function Date() {
                         </div>
                         <div>
                             <h1 className="text-2xl text-[#3E3E3] font-semibold uppercase mb-5">Reception</h1>
-                            <h1 className="text-2xl text-[#3E3E3E]">12.30 WIB - Selesai</h1>
+                            <h1 className="text-2xl text-[#3E3E3E] text-nowrap">12.30 WIB - Onwards</h1>
                         </div>
                     </div>
                     <Link href={"https://maps.app.goo.gl/ZjDx8mp7HAEAeChn8?g_st=ipc"} target='_blank'>
@@ -125,7 +125,7 @@ function Date() {
                             </div>
                             <div className='flex flex-col -ml-3'>
                                 <h1 className="text-md text-[#3E3E3] font-semibold uppercase mb-2">Reception</h1>
-                                <h1 className="text-xs text-[#3E3E3E]">12.30 WIB - Selesai</h1>
+                                <h1 className="text-xs text-nowrap text-[#3E3E3E]">12.30 WIB - Onwards</h1>
                             </div>
                         </div>
                         <Link href={"https://maps.app.goo.gl/ZjDx8mp7HAEAeChn8?g_st=ipc"} target='_blank' className='flex flex-col items-center'>

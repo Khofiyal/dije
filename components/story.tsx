@@ -2,7 +2,6 @@
 
 import * as React from "react"
 
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -20,20 +19,20 @@ function Story() {
   const StoryContent = [
     {
       title: "20 November 2024",
-      description: "Semua berawal dari sebuah pertemuan sederhana. Tidak ada yang istimewa kala itu, namun siapa sangka hari itu akan menjadi titik awal dari perjalanan panjang kami. Percakapan yang awalnya terasa biasa, berubah menjadi jembatan yang perlahan mendekatkan hati. Dari hari ke hari, rasa nyaman tumbuh begitu alami. Kami mulai percaya, mungkin inilah cara Tuhan mempertemukan dua hati yang sudah Dia siapkan untuk bersama.",
+      description: "It all began with a simple meeting. Nothing felt extraordinary at that time, yet who would have thought that day would mark the beginning of our long journey together. A conversation that once felt ordinary slowly turned into a bridge that brought our hearts closer. Day by day, a sense of comfort grew naturally. We started to believe that perhaps this was God’s way of uniting two hearts He had destined to be together.",
     },
     {
-      title: "22 Februari 2025",
-      description: "Hari itu menjadi momen yang tak akan pernah terlupakan. Dengan tatapan penuh kesungguhan, ia mengungkapkan niat tulusnya: mengajak melangkah ke jenjang yang lebih serius, pernikahan. Rasanya campur aduk—haru, bahagia, dan penuh keyakinan. Di hari itulah aku semakin yakin bahwa cinta ini bukan sekadar rasa, tetapi sebuah keputusan untuk saling menjaga dan menemani sepanjang usia.",
+      title: "22 February 2025",
+      description: "That day became an unforgettable moment. With a gaze full of sincerity, he expressed his true intention: to take our steps toward something more serious—marriage. A whirlwind of emotions filled the day—gratefulness, joy, and certainty. It was on that day I became even more convinced that this love was not just a feeling, but a decision to care for and accompany each other for a lifetime.",
     },
     {
       title: "02 April 2025",
-      description: "Langkah besar berikutnya datang dengan doa dan restu keluarga. Kami mengikat janji pertunangan dalam suasana hangat penuh kebahagiaan. Momen itu bukan hanya tentang cincin yang melingkar di jari, melainkan simbol komitmen, keberanian, dan keyakinan untuk membangun rumah tangga bersama. Pertunangan menjadi saksi bahwa cerita kami bukan lagi mimpi, melainkan kenyataan yang sedang tumbuh indah.",
+      description: "The next big step came with prayers and the blessing of our families. We sealed our engagement in a warm atmosphere filled with happiness. That moment was not only about the ring encircling a finger, but also a symbol of commitment, courage, and determination to build a home together. The engagement stood as proof that our story was no longer a dream, but a beautiful reality taking shape.",
     },
     {
-      title: "18 Oktober 2025",
-      description: "Kini, perjalanan itu membawa kami pada hari yang selalu kami nantikan. Hari di mana dua hati dan dua keluarga dipersatukan dalam ikatan suci pernikahan. Kami percaya, semua langkah yang kami tempuh adalah bagian dari rencana terbaik yang Allah tuliskan untuk kami. Dengan penuh syukur, kami siap membuka lembaran baru sebagai suami dan istri, membangun rumah tangga yang insyaAllah dipenuhi cinta, keberkahan, dan kebahagiaan.",
-      description2: "Dengan segala kerendahan hati, kami memohon doa restu agar perjalanan kami senantiasa diberkahi. Kehadiran Bapak/Ibu/Saudara/i akan menjadi hadiah terindah dalam kisah kami.",
+      title: "18 October 2025",
+      description: "Now, this journey has brought us to the day we have always awaited. A day when two hearts and two families are united in the sacred bond of marriage. We believe that every step we have taken is part of the best plan that Allah has written for us. With gratitude, we are ready to open a new chapter as husband and wife, to build a family, inshaAllah, filled with love, blessings, and happiness.",
+      description2: "With all humility, we kindly ask for your prayers and blessings so that our journey may always be showered with grace. Your presence will be the most beautiful gift in our story.",
     },
   ]
 

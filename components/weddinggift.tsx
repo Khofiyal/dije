@@ -6,7 +6,7 @@ import { Code } from "./ui/code";
 
 function WeddingGift() {
     return (
-        <div className="flex flex-col items-center justify-center font-regular lg:mt-48 mt-20">
+        <div className='flex flex-col items-center justify-center font-regular lg:mt-48 mt-20'>
             <Image
                 className="lg:w-screen z-0 h-screen object-bottom-center object-cover"
                 src="/gift.png"
