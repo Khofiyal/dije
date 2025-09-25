@@ -22,11 +22,12 @@ import { useRef, useEffect, useState } from "react";
 
 export default function Home() {
 
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+const audioRef = useRef<HTMLAudioElement | null>(null);
+const [isPlaying, setIsPlaying] = useState(false);
+const [wasPlaying, setWasPlaying] = useState(false);
 
-    const togglePlayPause = () => {
-     if (!audioRef.current) return;
+const togglePlayPause = () => {
+if (!audioRef.current) return;
     if (isPlaying) {
       audioRef.current.pause();
       setIsPlaying(false);
@@ -34,22 +35,40 @@ export default function Home() {
       audioRef.current.play();
       setIsPlaying(true);
     }
-  };
+};
 
-  useEffect(() => {
+useEffect(() => {
     const playAudio = () => {
       if (audioRef.current) {
         audioRef.current.play();
       }
     };
+    
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        if (audioRef.current && !audioRef.current.paused) {
+          setWasPlaying(true);
+          audioRef.current.pause();
+        } else {
+          setWasPlaying(false);
+        }
+      } else {
+        if (wasPlaying && audioRef.current) {
+          audioRef.current.play();
+        }
+      }
+    };
+
 
     document.addEventListener('click', playAudio, { once: true });
     setIsPlaying(true);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 
     return () => {
       document.removeEventListener('click', playAudio);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
     };
-  }, []);
+  }, [wasPlaying]);
 
   return (
     <div className="relative w-full min-h-screen">
