@@ -95,7 +95,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                className="bg-[#F9F5EC] w-screen lg:h-[637px] mt-30  py-15 pb-15 lg:px-40">
+                className="bg-[#F9F5EC] lg:h-[637px] mt-30 py-15 pb-15 lg:px-40">
                     <div className="flex flex-col lg:grid lg:grid-cols-2">
                     <div className="mx-auto">
                         <Image 

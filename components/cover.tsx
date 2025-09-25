@@ -41,8 +41,8 @@ const Cover = () => {
                         <h1 className="text-2xl font-regular font-semibold justify-center mb-10 z-20">
                             The Wedding of
                         </h1>
-                        <h1 className="lg:text-7xl text-5xl font-title mb-6 z-20">
-                            Adrian  &  Diajeng
+                        <h1 className="lg:text-7xl text-5xl font-title mb-6 z-20 whitespace-pre-wrap">
+                        Diajeng  &  Adrian 
                         </h1>
                         <h1 className="lg:text-4xl text-lg font-regular mb-2 z-20">
                             Dear
