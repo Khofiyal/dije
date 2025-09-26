@@ -192,9 +192,9 @@ useEffect(() => {
                                 With hearts full of love, we warmly invite you to join us,<br/>
                                 share in our joy, and bless the beginning of our new chapter.
                             </h1>
-                            <h1 className="flex md:hidden text-md font-regular mx-10 mb-5">
-                                With hearts full of love, we warmly invite You<br/>
-                                to join us, share in our joy, and bless the<br/>
+                            <h1 className="flex md:hidden text-sm font-regular mx-10 mb-5">
+                                With hearts full of love, we warmly invite You
+                                to join us, share in our joy, and bless the
                                 beginning of our new chapter.
                             </h1>
                             <h1 className="lg:text-6xl text-[44px] font-title whitespace-pre-wrap">

@@ -128,7 +128,7 @@ function Date() {
                                 <h1 className="text-xs text-nowrap text-[#3E3E3E]">12.30 WIB - Onwards</h1>
                             </div>
                         </div>
-                        <Link href={"https://maps.app.goo.gl/ZjDx8mp7HAEAeChn8?g_st=ipc"} target='_blank' className='flex flex-col items-center'>
+                        <Link href={"https://maps.app.goo.gl/ZjDx8mp7HAEAeChn8?g_st=ipc"} target='_blank' className='flex flex-col items-center mb-5'>
                         <Button
                         className="mt-5 h-8 w-70 font-regular text-md font-semibold bg-white border border-[#9D8443] text-[#9D8443] hover:bg-[#9D8443] hover:text-white rounded-md"
                         variant="primary"
