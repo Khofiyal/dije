@@ -98,8 +98,8 @@ export default function Gallery() {
                             <Image
                                 src={item.src}
                                 alt={item.alt}
-                                className="aspect-[1/1] h-fit w-fit object-cover"
-                                width={300}
+                                className="aspect-[1/1] h-[250px] w-[250px] object-cover"
+                                width={400}
                                 height={400}
                             />
                             </div>
