@@ -6,15 +6,15 @@ export interface Gallery {
 }
 export const gallery: Gallery[] = [
   {
-    src: "/gal1.png",
+    src: "/gal1.jpg",
     alt: "Photo 1",
   },
   {
-    src: "/gal2.png",
+    src: "/gal2.jpg",
     alt: "Photo 2",
   },
   {
-    src: "/gal3.png",
+    src: "/gal3.jpg",
     alt: "Photo 3",
   },
   {
