@@ -24,8 +24,8 @@ const Bride = () => {
                 <h1 className="text-4xl font-regular font-semibold justify-center mb-4">
                      Adrian Tawakal
                 </h1>
-                <h1 className="text-xl font-regular mx-10 mb-4">
-                    Putra pertama dari Bapak Syafrul dan Ibu Soikhatul Masruroh
+                <h1 className="text-xl font-regular mx-8 mb-4">
+                    Anak pertama dari Bapak H. Syafrul, S.E. dan Ibu Soikhatul Masruroh
                 </h1>
                 <h1 className="text-xl font-regular mx-10 mb-4 italic">
                     First son of Mr. H. Syafrul, S.E. and Mrs. Soikhatul Masruroh
@@ -61,7 +61,7 @@ const Bride = () => {
                     Diajeng Fathisyahana
                 </h1>
                 <h1 className="text-xl font-regular mx-10 mb-4">
-                    Putri pertama dari Bapak Syafnil Buchari dan Ibu Emmy
+                    Anak pertama dari Bapak Syafnil Buchari dan Ibu Emmy
                 </h1>
                 <h1 className="text-xl font-regular mx-14 mb-4 italic">
                     First daughter of Mr. Syafnil Buchari and Mrs. Emmy

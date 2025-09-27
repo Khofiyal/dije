@@ -48,7 +48,13 @@ const Cover = () => {
                             Dear
                         </h1>
                         <h1 className="lg:text-3xl text-lg font-regular z-20">
-                            {params.id?.toString().replaceAll("%2B", "and").replaceAll("%20", " ")}
+                            {
+                                params.id ? (
+                                    params.id?.toString().replaceAll("%2B", "and").replaceAll("%20", " ")
+                                ) : (
+                                    "Tamu Undangan"
+                                )
+                            }
                         </h1>
                         <Button
                         className='bg-[#FFF9EA] text-[#FACB3D] hover:bg-[#FFF9EA] hover:text-[#FACB3D] ring-0 border border-[#FACB3D] mt-8 font-regular lg:text-xl text-lg p-5 lg:w-100 h-12 uppercase font-semibold z-20'
