@@ -92,7 +92,7 @@ const Bride = () => {
                      Adrian Tawakal
                 </h1>
                 <h1 className="text-sm font-regular mx-10 mb-4">
-                    Anak pertama dari H. Bapak Syafrul, S.E. dan Ibu Soikhatul Masruroh
+                    Anak pertama dari Bapak H. Syafrul, S.E. dan Ibu Soikhatul Masruroh
                 </h1>
                 <h1 className="text-sm font-regular mx-10 mb-4 italic">
                     First son of Mr. H. Syafrul, S.E. and Mrs. Soikhatul Masruroh
